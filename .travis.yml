@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '10'
+script:
+  - yarn install
+  - yarn fmt:check
+  - yarn lint:ts
+  - yarn test
+  - yarn build
+

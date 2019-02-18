@@ -1,11 +1,16 @@
 {
   "name": "@ekino/knex-extra",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.0.0",
   "repository": "git@github.com:ekino/knex-extra.git",
   "author": "Raphaël Benitte <raphael.benitte@ekino.com>",
   "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
+    "@types/jest": "^24.0.6",
     "@types/knex": "^0.15.2",
     "jest": "23.6.0",
     "knex": "^0.16.3",
@@ -21,6 +26,7 @@
     "fmt:check": "prettier --color --list-different \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "lint:ts": "tslint -p . -c tslint.json \"src/**/*.ts\"",
     "test": "jest",
-    "test:all": "yarn fmt:check && yarn lint:ts && yarn test && yarn build"
+    "test:all": "yarn fmt:check && yarn lint:ts && yarn test && yarn build",
+    "prepublish": "yarn build"
   }
 }

@@ -8,7 +8,9 @@
         "target": "es6",
         "sourceMap": true,
         "esModuleInterop": true,
-        "lib": ["es6"]
+        "lib": ["es6"],
+        "outDir": "./lib"
     },
+    "include": ["./src"],
     "exclude": ["node_modules"]
 }

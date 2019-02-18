@@ -1,5 +1,6 @@
 import { QueryBuilder } from 'knex'
 
+/*
 export const applyQuery = (
     queryBuilder: QueryBuilder,
     query: object,
@@ -35,7 +36,7 @@ export const applyQuery = (
  * @param {string}                contextId       - The contextId
  * @param {Array.<Array>}         [sort=null]     - The sorting directives we want to apply
  * @param {string|Array.<string>} [whiteList='*'] - The fields we can sort on
- */
+ *
 export const applySorting = (
     queryBuilder: QueryBuilder,
     contextId: string,
@@ -58,11 +59,11 @@ export const applySorting = (
                         whiteList
                     }
                 )
-                */
             }
         })
     }
 }
+*/
 
 export const applyLimitAndOffset = (
     queryBuilder: QueryBuilder,
