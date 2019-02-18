@@ -11,6 +11,8 @@ This package provides several helpers to be used with knex.
 -   [usage](#usage)
     -   [querying](#querying)
         -   [pagination](#pagination)
+    -   [nesting](#nesting)
+    -   [prefix](#prefix)
 
 ## Installation
 
@@ -27,3 +29,7 @@ yarn add @ekino/knex-extra
 ```typescript
 import { applyLimitAndOffset } from '@ekino/knex-extra'
 ```
+
+### Nesting
+
+### Prefix

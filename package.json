@@ -25,7 +25,7 @@
     "fmt": "prettier --color --write \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "fmt:check": "prettier --color --list-different \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "lint:ts": "tslint -p . -c tslint.json \"src/**/*.ts\"",
-    "test": "jest",
+    "test": "jest --verbose",
     "test:all": "yarn fmt:check && yarn lint:ts && yarn test && yarn build",
     "prepublish": "yarn build"
   }
