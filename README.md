@@ -7,10 +7,10 @@
 
 This package provides several helpers to be used with knex.
 
-- [installation](#installation)
-- [usage](#usage)
-    - [querying](#querying)
-        - [pagination](#pagination)
+-   [installation](#installation)
+-   [usage](#usage)
+    -   [querying](#querying)
+        -   [pagination](#pagination)
 
 ## Installation
 
@@ -23,3 +23,7 @@ yarn add @ekino/knex-extra
 ### Querying
 
 #### Pagination
+
+```typescript
+import { applyLimitAndOffset } from '@ekino/knex-extra'
+```
