@@ -9,6 +9,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/knex": "^0.15.2",
@@ -25,8 +28,12 @@
     "fmt": "prettier --color --write \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "fmt:check": "prettier --color --list-different \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "lint:ts": "tslint -p . -c tslint.json \"src/**/*.ts\"",
-    "test": "jest --verbose",
+    "test": "jest",
     "test:all": "yarn fmt:check && yarn lint:ts && yarn test && yarn build",
-    "prepublish": "yarn build"
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.121",
+    "lodash": "^4.17.11"
   }
 }
