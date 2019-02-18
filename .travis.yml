@@ -5,8 +5,10 @@ script:
 - yarn install
 - yarn fmt:check
 - yarn lint:ts
-- yarn test
+- yarn test:cov
 - yarn build
+after_success:
+- yarn coverage:pub
 notifications:
   slack:
     secure: AzNkqNJK0MSweB1icgFF4u+PP8gC0PVaqM2D8M96vzozapAzHcnFOafNn34to5zWnnwNDPn8BHjEbHLt50uko4mqnxp0P+qJJ8/mE9jEr/+Zu8OSdMmj8otUL3f3uyyzJLB17JrQ4fI9FFsDTYU3l2LOtvMB1Unjq2K+2xg2Dj62E2SBFHnN5iZJCNDjRO58qhiUohTCdFYurscWGSGEcy7zDlLk08RsqtSP3/KUTGkiXDiHJxicPPaeZUX8q2zK8rWXlw5+ko95uEmipBu/OzvPwub0q/Z6G6cwCWufSb5xkfyNxkn+/9zSqNVjbJdpnqLYKdHKTF/gGMpTDprf6/lxOB3AqxKWgk9VEQb/sS/G817LCgKPVkM7zHrgVOxh2tEU2cCRk4Dx55zPrSuncdx6E3OYt/XzoXXZg1TJ3si2B7IdFhB6OeK4gQH0UEdmCa0ZJCmUTh0bHA/Yi+EjKbkZSygir/BCi9GI3IAtYfufEr76krZZ7gbSN+23k+ePGMXunBHQ8p8r40z4gILXvrToeYN489vvWf08eWs+mt5bTDdNpzzSvmczDxhrovtdq6NcizM6C+5i0lgzYbnjOHiVCnkgv89/a3b8R0jHQ73EA4aUEBXHkZ1ASVxKz+RrTGXy5SwUcUIrNDJz4ORdDG1H7WNlRMgYpQ7dl1o0RaQ=

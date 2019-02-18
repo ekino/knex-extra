@@ -2,6 +2,7 @@
 
 [![version](https://img.shields.io/npm/v/@ekino/knex-extra.svg?style=flat-square)](https://www.npmjs.com/package/@ekino/knex-extra)
 [![Travis CI](https://img.shields.io/travis/ekino/knex-extra.svg?style=flat-square)](https://travis-ci.org/ekino/knex-extra)
+[![Codecov Coverage](https://img.shields.io/codecov/c/github/ekino/knex-extra/master.svg?style=flat-square)](https://codecov.io/gh/ekino/knex-extra/)
 
 :warning: Work in progress :warning:
 

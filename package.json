@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/knex": "^0.15.2",
+    "codecov": "^3.2.0",
     "jest": "23.6.0",
     "knex": "^0.16.3",
     "prettier": "^1.16.4",
@@ -28,7 +29,9 @@
     "fmt": "prettier --color --write \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "fmt:check": "prettier --color --list-different \"src/**/*.{js,ts}\" README.md tsconfig.json tslint.json jest.config.js",
     "lint:ts": "tslint -p . -c tslint.json \"src/**/*.ts\"",
-    "test": "jest",
+    "test": "jest --verbose",
+    "test:cov": "jest --verbose --coverage",
+    "coverage:pub": "codecov",
     "test:all": "yarn fmt:check && yarn lint:ts && yarn test && yarn build",
     "prepublishOnly": "yarn build"
   },
