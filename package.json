@@ -1,6 +1,6 @@
 {
   "name": "@ekino/knex-extra",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": "git@github.com:ekino/knex-extra.git",
   "author": "Raphaël Benitte <raphael.benitte@ekino.com>",
   "license": "MIT",
