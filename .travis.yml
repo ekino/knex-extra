@@ -4,6 +4,7 @@ node_js:
 script:
 - yarn install
 - yarn fmt:check
+- yarn license:check
 - yarn lint:ts
 - yarn test:cov
 - yarn build
